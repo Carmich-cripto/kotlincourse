@@ -16,4 +16,6 @@ val catering: Double = 30000.0 //кейтеринг
 val rentRoom: Double = 30000.0//аренда помещения
 val security: Double = 5000.0 // охрана
 val decoration: Double = 5000.0//декор, дизаин
-
+val liveMusic: Double = 2000.0 //лайв мьюзик
+//общий бюджет
+val totalBudget: Double = beerBottlingEquipmentRental + furnitureRental + catering + rentRoom + security + decoration + liveMusic
