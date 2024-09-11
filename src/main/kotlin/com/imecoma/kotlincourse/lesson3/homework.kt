@@ -4,9 +4,12 @@ class homework {
     //
 }
 
-val event: String = "Pivozavr fest 2024" //название forever, неизменно
-var data: String = "15.09.2024" //дата м.б измнена
-var place: String = "Krasnodar, Krasnaya Street, shopping center gallery" // место проведения так же может быть изменено
+//название мероприятия, утвержденно и неизменно на века
+val event: String = "Pivozavr fest 2024"
+//дата может быть изменена по разным причинам
+var data: String = "15.09.2024"
+//место проведения так же может быть изменено
+var place: String = "Krasnodar, Krasnaya Street, shopping center gallery"
 //расходы на оборудование, утверждены и неизменны
 val beerBottlingEquipmentRental: Double = 50000.0 //аренда пивного оборудования
 val furnitureRental: Double = 20000.0 //аренда мебели
@@ -19,3 +22,5 @@ val decoration: Double = 5000.0//декор, дизаин
 val liveMusic: Double = 2000.0 //лайв мьюзик
 //общий бюджет
 val totalBudget: Double = beerBottlingEquipmentRental + furnitureRental + catering + rentRoom + security + decoration + liveMusic
+//количество участников
+var
