@@ -27,7 +27,7 @@ var participants: Int = 100
 var durationEvent: Int = 3 // 3 часа
 // Контактная информация и условия соглашений с поставщиками пищи, оборудования и других услуг.
 val SupplierContacts: String by lazy {
-    "link to the archive"
+    "link to the archive"// путь ко всей информации с номерами, почтой и т.д
 }
 // Текущее состояние хакатона (статус)
 var status: String = "Planned"
