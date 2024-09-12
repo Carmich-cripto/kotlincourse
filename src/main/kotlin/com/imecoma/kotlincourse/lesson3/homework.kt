@@ -4,14 +4,14 @@ class homework {
     //
 }
 
-//название мероприятия, утвержденно и неизменно на века
-val event: String = "Pivozavr fest 2024"
+//название мероприятия, утвержденно
+val event: String = "IT conference 24"
 //дата может быть изменена по разным причинам
 var data: String = "15.09.2024"
 //место проведения так же может быть изменено
 var place: String = "Krasnodar, Krasnaya Street, shopping center gallery"
 //расходы на оборудование, утверждены и неизменны
-val beerBottlingEquipmentRental: Double = 50000.0 //аренда пивного оборудования
+val equipmentRental: Double = 50000.0 //аренда оборудования
 val furnitureRental: Double = 20000.0 //аренда мебели
 //расходы на кейтеринг, утверждены и неизменны
 val catering: Double = 30000.0 //кейтеринг
@@ -19,8 +19,13 @@ val catering: Double = 30000.0 //кейтеринг
 val rentRoom: Double = 30000.0//аренда помещения
 val security: Double = 5000.0 // охрана
 val decoration: Double = 5000.0//декор, дизаин
-val liveMusic: Double = 2000.0 //лайв мьюзик
 //общий бюджет
-val totalBudget: Double = beerBottlingEquipmentRental + furnitureRental + catering + rentRoom + security + decoration + liveMusic
+val totalBudget: Double = equipmentRental + furnitureRental + catering + rentRoom + security + decoration
 //количество участников
-var
+var participants: Int = 100
+// Длительность хакатона
+var durationEvent: Int = 3 // 3 часа
+// Контактная информация и условия соглашений с поставщиками пищи, оборудования и других услуг.
+var SupplierContacts: String = "suppilier@pochta.su , equipment@pochta.ny"
+// Текущее состояние хакатона (статус)
+
