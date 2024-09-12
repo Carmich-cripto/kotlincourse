@@ -29,3 +29,4 @@ var durationEvent: Int = 3 // 3 часа
 var SupplierContacts: String = "suppilier@pochta.su , equipment@pochta.ny"
 // Текущее состояние хакатона (статус)
 
+
