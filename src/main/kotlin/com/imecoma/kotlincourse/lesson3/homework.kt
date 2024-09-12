@@ -36,6 +36,11 @@ var status: String = "Planned"
         if (value = )field = value // тут должны быть статусы мероприятия, но я не понял как это сделать
     }
 // Список спонсоров
-
-
-
+val listSponsors: String by lazy {
+    "link to the archive sponsors"// путь к списку
+}
+//Бюджет мероприятия
+val  budgetEvent: Double = 200000.0
+//Текущий уровень доступа к интернету
+var InternetConnection: String = "stable"
+//думаю что тут тоже нужно через геттер/сеттер делать, но не понимаю как
