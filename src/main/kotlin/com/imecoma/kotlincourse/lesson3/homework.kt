@@ -5,7 +5,7 @@ class homework {
 }
 
 //название мероприятия, утвержденно
-val event: String = "IT conference 24"
+ const val event: String = "IT conference 24"
 //дата может быть изменена по разным причинам
 var data: String = "15.09.2024"
 //место проведения так же может быть изменено
@@ -26,7 +26,16 @@ var participants: Int = 100
 // Длительность хакатона
 var durationEvent: Int = 3 // 3 часа
 // Контактная информация и условия соглашений с поставщиками пищи, оборудования и других услуг.
-var SupplierContacts: String = "suppilier@pochta.su , equipment@pochta.ny"
+val SupplierContacts: String by lazy {
+    "link to the archive"
+}
 // Текущее состояние хакатона (статус)
+var status: String = "Planned"
+    get() = field
+    set(value) {
+        if (value = )field = value // тут должны быть статусы мероприятия, но я не понял как это сделать
+    }
+// Список спонсоров
+
 
 
