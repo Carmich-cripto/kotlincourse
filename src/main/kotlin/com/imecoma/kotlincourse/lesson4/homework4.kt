@@ -12,7 +12,7 @@ val a9: Long = 4294967296L
 val a10: Float = 18.0f
 val a11: Double = -0.001
 val a12: String = "OpenAI"
-val a13: Any = "“true”"
+val a13: Any = "“true”" // ошибка, можно исправить val a13: String = "true", или же val a13: Boolean = true
 val a14: Char = '9'
 val a15: Short = 2048
 val a16: Long = 10000000000L
@@ -27,8 +27,8 @@ val a24: Float = 10.01f
 val a25: Double = -273.15
 val a26: String = "SpaceX"
 val a27: Boolean = true
-val a28: Any = "“🤯”"
-val a29: Any = "‘65535’"
+val a28: Any = "“🤯”"// ошибка, можно исправить val a28: String = "🤯"
+val a29: Any = "‘65535’"// ошибка, можно исправить val a29: Int = 65535
 val a30: Long = 72057594037927935L
 val a31: Float = 2.71828f
 val a32: Double = 101.0101
