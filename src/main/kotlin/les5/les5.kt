@@ -27,6 +27,6 @@ fun main(){
     number += 3//присваивание с увеличением, number = number + 3( number += 3) ,будет тоже самое
     number -= 2//тоже только с -, 5+3=8-2=6
 
-    println(product)
+    println(number)
 }
 
