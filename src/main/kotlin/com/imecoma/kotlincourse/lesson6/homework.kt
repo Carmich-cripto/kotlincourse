@@ -48,33 +48,48 @@ package com.imecoma.kotlincourse.lesson6
      //Контекст: Клиенты интернет-магазина получают бонусные баллы за покупки. Напишите функцию, которая принимает сумму покупки и возвращает количество бонусных баллов: 2 балла за каждые 100 рублей при сумме покупки до 1000 рублей и 5 баллов за каждые 100 рублей при сумме свыше этого.
 
      fun calculatedBonus(purchasePrice: Int): Int {
-         if (purchasePrice <= 1000) {
+         return  if (purchasePrice <= 1000) {
              (purchasePrice / 100) * 2
          } else {
-             (purchasePrice > 1000)
              (purchasePrice / 100) * 5
          }
      }
-     println(calculatedBonus(1000))
+     println(calculatedBonus(11000))
 
 
      //Задание 5: "Определение Типа Документа"
      //Контекст: В системе хранения документов каждый файл имеет расширение. Напишите функцию, которая на основе расширения файла возвращает его тип: "Текстовый документ", "Изображение", "Таблица" или "Неизвестный тип".
 
-     val expansion: String = "pdf"
-     if (expansion == "txt") {
-         println("текстовый файл")
-     } else if (expansion == "png") {
-         println("изображение")
-     } else if (expansion == "pdf") {
-         println("таблица")
-     } else {
-         println("неизвестный файл")
+     fun checkingTheExtension(extension: String): String {
+     return  when (extension){
+         in "txt" -> "текстовый файл"
+         in "png" -> "изображение"
+         in "exe" -> "таблица"
+         else -> "неизвестный тип"
      }
+
+     }
+     println(checkingTheExtension("txt"))
+
 
      //Задание 6: "Конвертация Температуры"
      //Контекст: Создайте функцию, которая конвертирует температуру из градусов Цельсия в Фаренгейты и наоборот в зависимости от указанной единицы измерения (C/F). Единицу измерения нужно передать вторым аргументом функции. Несколько аргументов передаются через запятую. Возвращать нужно строку.
      //Подсказка: для генерации строки из числа и буквы можно использовать шалон “$result F” для фаренгейта или “$result C” для цельсия
+
+     fun temperatureConversion(temperatures: Double, unit: String): String{
+         return if (unit == "C"){
+             val result = (temperatures * 9 / 5) + 32
+         "$result F"}
+         else if (unit == "F"){
+             val result1 = ((temperatures - 32) / 1.8)
+         "$result1 C"}
+         else {
+             "incorrect data"
+         }
+
+     }
+     println(temperatureConversion(25.0, "C"))
+     println(temperatureConversion(99.9, "F"))
 
 
      //Задание 7: "Подбор Одежды по Погоде"
