@@ -2,7 +2,7 @@ package com.imecoma.kotlincourse.lesson5
 
 import les5.printSiteLang
 
-fun main() {
+// {
 //    val number = 4
 //    if (number > 5) {
 //    //if - если (условие) = true , то будет выполнен блок кода
@@ -107,18 +107,18 @@ fun main() {
 //    }
 //println(getTimesOfDay(23))
 
-    fun getTimesOfDay(hour: Int): String{
-//        if (hour in 0..4) return "ночь"
-//        if (hour in 5..11) return "утро"
-        return when {
-            hour < 0 || hour > 2 ->"неверное время"
-            hour in 0 .. 4 ->"ночь"
-            hour in 5 .. 11 ->"утро"
-            hour in 12..16 ->"день"
-            else -> "вечер"
-        }
-
-    }
-    println(getTimesOfDay(24))
-
-    }
+//    fun getTimesOfDay(hour: Int): String{
+////        if (hour in 0..4) return "ночь"
+////        if (hour in 5..11) return "утро"
+//        return when {
+//            hour < 0 || hour > 2 ->"неверное время"
+//            hour in 0 .. 4 ->"ночь"
+//            hour in 5 .. 11 ->"утро"
+//            hour in 12..16 ->"день"
+//            else -> "вечер"
+//        }
+//
+//    }
+//    println(getTimesOfDay(24))
+//
+//    }
