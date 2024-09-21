@@ -8,7 +8,7 @@ package com.imecoma.kotlincourse.lesson6
      fun DetermineSeason(month: Int): String {
          return when {
              month < 0 || month > 12 -> "ошибка"
-             (month in 1..2 || month == 12) -> "зима"
+             month in 1..2 || month == 12 -> "зима"
              month in 3..5 -> "весна"
              month in 6..8 -> "лето"
              month in 9..11 -> "осень"
