@@ -1,6 +1,10 @@
-package com.imecoma.kotlincourse.lesson5
+package les5
 
-import les5.printSiteLang
+class les6 {
+}
+
+
+
 
 // {
 //    val number = 4
