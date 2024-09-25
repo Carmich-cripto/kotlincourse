@@ -79,14 +79,14 @@ fun main (){
 
     var count = 1
     var sum = 0
-    while (count <= 10){
+    while (count <= 5){
         sum = sum + count++
         println(sum)
     }
 
     var counter1 = 100
     while(counter1 > 1){
-        println(counter1--.toString().length)
+        print(counter1--.toString().length)
     }
 
 
