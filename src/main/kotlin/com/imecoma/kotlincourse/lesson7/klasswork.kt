@@ -76,6 +76,7 @@ fun main (){
         println(i)
     }
 
+
     var count = 1
     var sum = 0
     while (count <= 10){
