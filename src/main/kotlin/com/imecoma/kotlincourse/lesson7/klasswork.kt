@@ -84,6 +84,11 @@ fun main (){
         println(sum)
     }
 
+    var counter1 = 100
+    while(counter1 > 1){
+        println(counter1--.toString().length)
+    }
+
 
 
 
