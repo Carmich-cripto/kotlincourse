@@ -93,15 +93,29 @@ fun main() {
     )//метод формат будет передавать в порядке котором написано в заглушки
     println(convert("для завершения проекта важно"))
 println(text11.substring(8,19))
-
+    val card = "4539 1488 0343 6467"
+    val scard = card.substring(16)
+    println("**** **** **** $scard")
     val num = "779-777-7777"
     val sString = num.substring(8)
     val indexOfCat = text111.indexOf('@')
     println(text111.substring(8))
     println(text111.substring(indexOfCat + 1))
     println("xxx-xxx-$sString")
-
+println(result)
 }
+
+class Lucky(val start: String, val end: String)
+
+val lucky = Lucky("Иногда", "но не всегда")
+val result =
+    "${lucky.start} удача ${lucky.end}."
+
+
+
+
+
+
     fun getDetails(): String {
         return "очень интересные детали"
     }
